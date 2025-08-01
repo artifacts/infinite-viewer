@@ -87,7 +87,7 @@ export interface InfiniteViewerOptions {
      * Key to use wheel pinch
      * @default "ctrl"
      */
-    wheelPinchKey: "ctrl" | "meta" | "alt" | "shift",
+    wheelPinchKey: "ctrl" | "meta" | "alt" | "shift" | "auto";
     /**
      * Whether to use wheel scroll. You can scroll smoothly by using the wheel.
      * @default IS_SAFARI
