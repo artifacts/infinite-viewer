@@ -863,7 +863,7 @@ class InfiniteViewer extends EventEmitter<InfiniteViewerEvents> {
         const pinchDirection = options.pinchDirection;
         const maxPinchWheel = options.maxPinchWheel || Infinity;
 
-        const isKeydown = e[`${this.wheelPinchKey}Key`] || e.ctrlKey;
+        const isKeydown = this.wheelPinchKey === null ? true : e[`${this.wheelPinchKey}Key`] || e.ctrlKey;
 
         if (options.useWheelPinch && isKeydown) {
             let deltaY = e.deltaY;
